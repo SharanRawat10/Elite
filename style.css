@@ -1,0 +1,83 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Main */
+main {
+  padding: 2rem;
+}
+main h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.product {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 1rem;
+  text-align: center;
+}
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.product h3 {
+  margin: 1rem 0 0.5rem;
+}
+.product p {
+  margin: 0.5rem 0;
+}
+.product button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product button:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
